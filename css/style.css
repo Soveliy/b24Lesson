@@ -9,7 +9,10 @@ body {
     line-height: 150%;
     font-family: "Inter", sans-serif;
 }
+button,input{
+    appearance: none;
 
+}
 .container {
     max-width: 1440px;
     width: 96%;
@@ -195,8 +198,57 @@ body {
     font-weight: 500;
     margin: 0;
 }
+.section-head.white h2,.section-head.white p{
+    color: #fff;
+}
 
+.grey-section{
+    background-color: #DBDBDB;
+    padding: 100px 0;
+}
+.offer{
+    padding: 50px;
+    background-color: #16C7FF;
+    border-radius: 10px;
+}
+.offer .left{
+    width: 60%;
+}
+.bonuses{
+    padding: 71px 40px;
+    background-color: #fff;
+    border-radius: 10px;
+}
+.bonuses .grid{
+    display: grid;
+    grid-template-columns:1fr 1fr;
+    gap: 40px 30px;
+}
+.bonuses-item{
+    display: flex;
+    
+}
+.bonuses-item .icon{
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    background-color: #00AEEF;
+    flex-shrink: 0;
+    margin-right: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 
+}
+.bonuses-item  p{
+    margin: 0;
+}
+input::placeholder{
+    color: red;
+}
+input{
+    outline: 0;
+}
 @media (max-width:1024px){
     .gift .item-container{
         width: 50%;
